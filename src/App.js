@@ -20,15 +20,15 @@ const items = [
 
 const options = [
     {
-        label: 'The color red',
-        value: 'red'
+        label: 'Dawn orange',
+        value: 'orange'
     },
     {
-        label: 'The color green',
+        label: 'Forest green',
         value: 'green'
     },
     {
-        label: 'The color blue',
+        label: 'Shade blue',
         value: 'blu'
     }
 ];
