@@ -6,17 +6,19 @@ const Dropdown = ({ options, selected, onSelectedChange }) => {
 
     useEffect(() => {
         const onBodyClick = (event) => {
-            if(ref.current.contains(event.target)) {
-                return;
+            if(event.taget !== null) {
+                if(ref.current.contains(event.target)) {
+                    return;
+                }
             }
             
             setOpen(false);
         };
 
-        document.body.addEventListener('click', onBodyClick);
+        document.body.addEventListener("click", onBodyClick);
 
         return () => {
-            document.body.removeEventListener('click', onBodyClick);
+            document.body.removeEventListener("click", onBodyClick);
         };
     }, []);
 
